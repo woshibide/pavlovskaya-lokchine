@@ -103,7 +103,7 @@ a, h1{
       </a>
     </div>
     <div class="img-container">
-      <NuxtImg src="/imgs/placeholder.jpg" alt="black and white photo of the artist (Alexandra Pavlovskaya Lokchine) standing behind her sculptures"/>
+      <NuxtImg src="/imgs/placeholder.jpg" alt="black and white photo of the artist (Alexandra Pavlovskaya Lokchine) standing behind her sculptures" />
     </div>
   </div>
 </template>

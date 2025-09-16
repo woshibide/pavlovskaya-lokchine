@@ -2,12 +2,6 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  app: {
-    baseURL: '/pavlovskaya/'
-  },
-  nitro: {
-    preset: 'github-pages'
-  },
   modules: [
     '@nuxt/content',
     '@nuxt/eslint',
