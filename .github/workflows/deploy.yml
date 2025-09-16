@@ -47,6 +47,7 @@ jobs:
         with:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
+      # uncomment for npm hell stupidity bug
       - name: Remove node_modules and .nuxt
         run: |
           rm -rf node_modules
