@@ -10,12 +10,23 @@
   font-variation-settings: "slnt" 0, "wght" var(--thickness);
   font-weight: var(--thickness);
 }
+
+body {
+  max-height: 100vh;
+}
 </style>
 
 <style scoped>
 
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 98svh;
+}
+
 h1{
-  max-width: 75ch;
+  max-width: 40ch;
   
   text-align: left;
 }
@@ -25,11 +36,11 @@ a, h1{
 }
 
 .content-wrapper{
-  width: 100vw;
+  max-width: 100vw;
 }
 
 .general-info{
-  margin: 3rem 0;
+  margin: 3rem 0 0 0;
 }
 
 .img-container {
@@ -42,9 +53,9 @@ a, h1{
 .img-container img {
   max-width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
-/* Mobile styles */
 @media (max-width: 768px) {
   h1 {
     max-width: 100%;
@@ -62,48 +73,36 @@ a, h1{
 
   .img-container {
     justify-content: center;
-    margin: 1rem 1rem 0 1rem;
+    margin: 1rem 0 0 0;
+    height: 70vh;
   }
 
   .img-container img {
-    max-width: 100%;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.25rem;
-  }
-
-  a, h1 {
-    font-size: 1.25rem;
-  }
-
-  .general-info {
-    margin: 1.5rem 1rem;
-  }
-
-  .img-container {
-    margin: 1rem 1rem 0 1rem;
-  }
-}
 </style>
 
 
 <template>
-  <div class="content-wrapper">
-    <div class="general-info">
-      <h1>
-          Alexandra Pavlovskaya-Lokchine is an emerging multidisciplinary artist focusing on the intersection of moving image, sculpture, painting and installation. 
-      </h1>
-      <a href="mailto:info@pavlovskaya-lokchine.com">
-        info@pavlovskaya-lokchine.com
-      </a>
+  <div class="app-container">
+    <div class="content-wrapper">
+      <div class="general-info">
+        <h1>
+            Alexandra Pavlovskaya-Lokchine is an emerging multidisciplinary artist focusing on the intersection of moving image, sculpture, painting and installation. 
+        </h1>
+        <a href="mailto:info@pavlovskaya-lokchine.com">
+          info@pavlovskaya-lokchine.com
+        </a>
+      </div>
+      <div class="img-container">
+        <NuxtImg src="/imgs/placeholder.jpg" alt="black and white photo of the artist (Alexandra Pavlovskaya Lokchine) standing behind her sculptures" />
+      </div>
     </div>
-    <div class="img-container">
-      <NuxtImg src="/imgs/placeholder.jpg" alt="black and white photo of the artist (Alexandra Pavlovskaya Lokchine) standing behind her sculptures" />
-    </div>
+    <AppFooter />
   </div>
 </template>
 
