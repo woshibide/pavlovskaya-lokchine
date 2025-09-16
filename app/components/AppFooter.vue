@@ -1,12 +1,3 @@
-<style>
-.footer-container{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-}
-</style>
-
 <template>
     <div class="footer-container">
         <p>This website is now under construction.</p>
@@ -17,3 +8,12 @@
 <script setup>
 // vue fucking needed empty script!
 </script>
+
+<style scoped>
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+</style>
