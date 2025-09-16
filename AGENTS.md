@@ -1,0 +1,1 @@
+This is a simple web portfolio project built using Nuxt.js, designed to showcase personal or professional work in an elegant and responsive manner. It includes features like image optimization, content management, and modern web standards to provide a seamless user experience across devices.
