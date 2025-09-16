@@ -1,13 +1,12 @@
 <style>
 
 :root {
-  --thickness: 100;
+  --thickness: 200;
 }
 
 * {
-  /*  ucs2fqt */
   color: black !important; 
-  font-family: "cofo-sans-variable", sans-serif;
+  font-family: "cofo-sans-variable", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-variation-settings: "slnt" 0, "wght" var(--thickness);
   font-weight: var(--thickness);
 }

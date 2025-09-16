@@ -10,8 +10,14 @@ export default defineNuxtConfig({
   ],
   fonts: {
     adobe: {
-      id: ['ucs2fqt']
+      id: ['ucs2fqt'] 
     },
+    // default options for all fonts to ensure proper loading
+    defaults: {
+      weights: ['100 900'], // range for variable font
+      styles: ['normal'], 
+      subsets: ['latin'] // to ensure @ is included
+    }
   },
   ssr: true,
   nitro: {
