@@ -7,6 +7,6 @@ if [ "$1" ]; then
 fi
 
 git add .
-git commit -a -m "$MSG"
 git status
+git commit -a -m "$MSG"
 git push
