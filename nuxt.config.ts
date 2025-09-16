@@ -12,5 +12,12 @@ export default defineNuxtConfig({
     adobe: {
       id: ['ucs2fqt']
     },
+  },
+  ssr: true,
+  nitro: {
+    preset: 'github_pages'
+  },
+  app: {
+    baseURL: '/pavlovskaya-lokchine/'
   }
 })
