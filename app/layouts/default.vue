@@ -13,9 +13,12 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 98svh;
+  max-width: 100vw;
 }
 
 .content-wrapper{
+  margin: 0;
+  padding: 0;
   max-width: 100vw;
 }
 </style>

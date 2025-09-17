@@ -1,6 +1,6 @@
 <template>
     <div class="footer-container">
-        <p>This website is now under construction.</p>
+        <!-- <p>This website is now under construction.</p> -->
         <p>2025</p>
     </div>
 </template>
@@ -15,5 +15,6 @@
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+    margin: 0.5rem;
 }
 </style>
